@@ -1,0 +1,381 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+button, .btn ,btn .btn-primary {
+    font-family: 'Poppins', sans-serif;
+}
+.nav, .footer, .small-info {
+    font-family: 'Lato', sans-serif;
+}
+.logo-img {
+    width: 23vh;
+    height: 100%;
+}
+
+/* .logo-img {
+    height: 120px; 
+    width: auto;
+} */
+
+
+
+.logo-text {
+    font-size: 1.5rem;
+    color: #002c55;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/* Navbar Ayarları */
+.navbar {
+    font-size: 2em;
+     display: flex;
+    position: absolute; 
+    background-color: #f8f9fa;
+    opacity: 0.8    ;
+    padding: 0.5rem 0.8rem;
+    
+    
+}
+
+/* Hamburger menü ikon rengi ayarı */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23002c55' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.navbar-brand {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000 !important;
+    padding: 0; 
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    font-size: 1.25rem;
+    margin-right: 15px;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center; /* Dikey hizalamayı merkezli hale getirir */
+    height: 100%; /* Yüksekliği navbar'a göre ayarlayarak hizalar */
+}
+.navbar-nav .nav-item .nav-link {
+    white-space: nowrap;
+}
+
+
+/* Carousel Ayarları */
+.carousel-item img {
+    height: 750px;
+    object-fit: cover;
+}
+.carousel-caption {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 44, 85, 0.7); /* Saydam #002c55 */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    height: 40%; /* %40 yukarı kadar kaplama */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-caption h2, .carousel-caption p {
+    margin: 0.5rem 0;
+}
+
+
+.section-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#aboutSection,
+#whyUsSection {
+    padding: 50px 0;
+    line-height: 1.8;
+    color: #555;
+    background-color:#f8f9fa;
+   
+    
+}
+#aboutSection{
+    font-size: 1.3rem;
+ 
+}
+
+
+/* Neden Bizi Tercih Etmelisiniz Kart Yapıları */
+.info-box {
+    background-color: #f8f9fa;
+    border: 2px solid #002c55;
+    padding: 20px;
+    
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.info-box h3 {
+    color: #004085;
+    font-size: 1.5rem;
+    font-weight:600;    
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.team-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    height: 70vh;
+  }
+  
+  .team-card {
+    background-color: #f8f9fa;
+    border: 3px solid #002c55;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-info {
+    padding: 20px;
+  }
+  
+  .extra-info {
+    display: none;
+    margin-top: 10px;
+    background-color: #002c55;
+    opacity: 0.9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+  }
+  
+  .team-card:hover .extra-info {
+    display: block;
+  }
+  
+  .extra-info p {
+    margin: 5px 0;
+  }
+  
+.explore-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Arka plan rengi fotoğraf ile aynı */
+    height: 600px; /* Section yüksekliği */
+    display: flex;
+    align-items: center;
+}
+
+.explore-photo {
+    width: 175%; /* Fotoğraf genişliği section'un yarısını kaplıyor */
+    height: 100%; /* Fotoğraf yüksekliği section ile uyumlu */
+    object-fit: cover;
+    padding-right: 200px;
+    
+}
+
+.vertical-separator {
+    width: 6px; /* Ayırma çizgisi genişliği */
+    height: 70%; /* Ayırma çizgisi yüksekliği */
+    background-color: #002c55;
+    margin: auto 20px; /* Soldan ve sağdan boşluk */
+    border-radius: 3px;
+}
+
+.explore-text {
+    font-size: 2.2rem; /* Yazı boyutu */
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.explore-button {
+    display: block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #002c55;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Butonu ortaladık */
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.explore-button:hover {
+    background-color: #004085;
+}
+
+
+
+/* Footer Ayarları */
+footer {
+    background-color: #002c55;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .section-title {
+    color: #002c55;
+    
+}
+
+.social-links {
+    margin-top: 20px;
+    
+}
+
+.social-links a {
+    color: #002c55;
+    margin: 0 10px;
+    font-size: 1.5rem;
+   
+}
+
+
+/* Yeni Çizgi Düzenlemeleri */
+.separator {
+    width: 1px;
+    height: 50px;
+    background-color: #002c55;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.social-item {
+    margin-left: 10px;
+}
+
+/* İletişim Formu */
+.contact-form {
+    border:2px solid #002c55;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 1.5%;
+}
+/* İletişim Başlığı */
+.contact-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Adres Bilgileri İçin Stil */
+#contact-address-content {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 3;
+}
+
+#contact-address-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#contact-address-content, #contact-address-title {
+    text-align: center;
+}
+
+
+h3,
+.map-container {
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 120%;
+    height: 450px;
+}
+
+/* Flex Ayarları */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buton Ayarları */
+.btn-primary {
+    color: #fff;
+    background-color: #002c55;
+    border-color: #fff;
+    transition: background-color 0.3s ease;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+}
+.btn-primary:hover{
+    background-color: #004085;
+}
+
+.footer {
+    background-color: #002c55; /* Footer arka plan rengi */
+    padding: 20px 0; /* İçerik ile kenarlar arasında boşluk oluşturur */
+    color: #fff;
+    height: auto; /* Otomatik yüksekliği içerik ile doldurur */
+    min-height: 100px; /* Minimum yüksekliği belirler */
+    text-align: center; /* Metni ortalar */
+}
+
+.footer .container {
+    padding: 20px; /* İçerik ile kenarlar arasında boşluk */
+}

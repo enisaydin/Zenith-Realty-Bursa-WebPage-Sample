@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith Realty | Gayrimenkulün Zirvesi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&family=Roboto+Slab:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center me-auto">
+          <!-- Türkiye  -->
+          <a href="#" class="nav-link p-0" onclick="changeLanguage('tr')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+              alt="Türkçe"
+              width="30"
+              class="flag-icon"
+            />
+          </a>
+          &emsp;
+          <!-- İngiltere -->
+          <a href="#" class="nav-link p-0" onclick="changeLanguage('en')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+              alt="English"
+              width="30"
+              class="flag-icon"
+            />
+          </a>
+          <!--Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./img/6.svg" alt="ZR Logo" class="logo-img" />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutSection" id="nav-about"
+                >Hakkımızda</a
+              >
+            </li>
+            <li class="nav-item separator d-none d-lg-block"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#whyUsSection" id="nav-why"
+                >Neden Biz?</a
+              >
+            </li>
+            <li class="nav-item separator d-none d-lg-block"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactSection" id="nav-contact"
+                >İletişim</a
+              >
+            </li>
+            <li class="nav-item separator d-none d-lg-block"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#teamSection" id="nav-team">Ekibimiz</a>
+            </li>
+            <li class="nav-item separator d-none d-lg-block"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore-section" id="nav-explore"
+                >İlanlarımız</a
+              >
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto d-none d-lg-flex social-icons">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/profile.php?id=61565913206701"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/zenithrealty16/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://zenithrealty.sahibinden.com"
+                target="_blank"
+              >
+                <i class="fa-brands fa-stripe-s"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section
+      id="carouselSection"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="./img/k2.svg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h2 id="carousel1-h2">ZAMAN KAZANIN</h2>
+            <p id="carousel1-p">
+              Bizimle birlikte hayallerinizdeki eve hızlı ve profesyonel bir
+              süreçle ulaşın.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/k1.svg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h2 id="carousel2-h2">AKLINIZ KALMASIN</h2>
+            <p id="carousel2-p">
+              Uzman ekibimiz aklınıza takılan her konuda kaliteli çözümler
+              üretmek için sizlerle.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="./img/k3.svg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h2 id="carousel3-h2">FIRSATLARI KAÇIRMAYIN</h2>
+            <p id="carousel3-p">
+              Geniş ve çeşitli portföyümüz sayesinde kendinize uygun olan
+              fırsatlara rahatça ulaşın.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselSection"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Önceki</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselSection"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Sonraki</span>
+      </button>
+    </section>
+
+    <!-- Hakkımızda -->
+      
+
+         <section id="aboutSection" class="container">
+      <h2 class="section-title" id="about-title">Hakkımızda</h2>
+      <p id="about-content">
+        Zenith Realty olarak, Bursa’nın gayrimenkul sektöründe uzun yıllara
+        dayanan tecrübemizle güvenilir ve profesyonel danışmanlık hizmeti
+        sunmaktayız. Misyonumuz, müşterilerimizin gayrimenkul ihtiyaçlarını en
+        yüksek memnuniyet seviyesinde karşılamak, vizyonumuz ise sektörde
+        yenilikçi, güvenilir ve sürdürülebilir çözümler sunarak lider bir marka
+        olmaktır. Bursa’daki uzman ekibimiz, her biri kendi alanında profesyonel
+        danışmanlarımızla sizlere hizmet sunarken, dürüstlük ve şeffaflık
+        ilkelerini esas alır. Yılların birikimi ile edindiğimiz deneyim
+        sayesinde, gayrimenkul sektörünün tüm inceliklerini ve gelişmelerini
+        yakından takip ediyor, bu doğrultuda sizlere en güncel ve etkili
+        çözümleri sunuyoruz. Zenith Realty, gayrimenkul yatırımlarınızda
+        yalnızca aracılık hizmeti değil, aynı zamanda güvenilir bir yol arkadaşı
+        olmayı hedefler. Müşteri odaklı hizmet anlayışımız ile sizin
+        çıkarlarınızı koruyarak, gayrimenkul işlemlerinizin her aşamasında
+        yanınızda olmaktan gurur duyuyoruz. Geniş portföyümüz, titizlikle
+        değerlendirilmiş mülkler ve kaliteli çözümler sunma hedefimizle Bursa’da
+        lider bir gayrimenkul danışmanlığı hizmeti sunuyoruz. İster yatırım
+        yapmayı düşünün, ister yaşamak için bir ev arayın; Zenith Realty, sizin
+        için en doğru tercihleri sunarak güvenli ve memnuniyet odaklı bir hizmet
+        sağlamaktadır.
+      </p>
+    </section>
+  
+     
+ 
+
+    <!-- Neden Biz? -->
+    <section id="whyUsSection" class="container">
+      <h2 class="section-title" id="why-title">
+        Neden Bizi Tercih Etmelisiniz?
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="info-box" style="border: 2px solid #002c55">
+            <h3 id="why-reliability">Güvenilirlik</h3>
+            <p id="why-reliability-content">
+              Uzman ekibimizle yılların deneyimiyle güvenilir hizmet sunuyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box" style="border: 2px solid #002c55">
+            <h3 id="why-quality">Kalite</h3>
+            <p id="why-quality-content">
+              Her zaman en kaliteli çözümleri sunmaya odaklanıyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box" style="border: 2px solid #002c55">
+            <h3 id="why-satisfaction">Müşteri Memnuniyeti</h3>
+            <p id="why-satisfaction-content">
+              Müşterilerimizin memnuniyeti bizim için her şeyden önemli.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="team-section" id="teamSection">
+      <div class="container">
+        <h2 class="section-title" id="team-title">Ekibimiz</h2>
+        <div class="row">
+          <!-- İlk Ekip Üyesi -->
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="./img/ekip1.jpg"
+                alt="Ekip Üyesi 1"
+                class="team-photo"
+              />
+              <div class="team-info">
+                <h4 id="team-member1-name"> John Doe</h4>
+                <p id="team-member1-role">Gayrimenkul Danışmanı</p>
+                <div class="extra-info">
+                  <p>zenithrealty16@gmail.com</p>
+                  <p>xxx-xxx-xx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- İkinci Ekip Üyesi -->
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="./img/ekip1.jpg"
+                alt="Ekip Üyesi 2"
+                class="team-photo"
+              />
+              <div class="team-info">
+                <h4 id="team-member2-name">Jane Doe</h4>
+                <p id="team-member2-role">Broker</p>
+                <div class="extra-info">
+                  <p>zenithrealty16@gmail.com</p>
+                  <p>xxx-xxx-xx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Üçüncü Ekip Üyesi -->
+          <div class="col-md-4">
+            <div class="team-card">
+              <img
+                src="./img/ekip1.jpg"
+                alt="Ekip Üyesi 3"
+                class="team-photo"
+              />
+              <div class="team-info">
+                <h4 id="team-member3-name">Johnny Doe</h4>
+                <p id="team-member3-role">Gayrimenkul Danışmanı</p>
+                <div class="extra-info">
+                  <p>zenithrealty16@gmail.com</p>
+                  <p>xxx-xxx-xx</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="explore-section" id="explore-section">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <!-- Sol taraf (Fotoğraf) -->
+          <div class="col-md-5 text-center">
+            <img
+              src="./img/download.png"
+              alt="Örnek Fotoğraf"
+              class="explore-photo"
+            />
+          </div>
+
+          <!-- Ortadaki Ayırıcı Çizgi -->
+          <div class="col-md-1 d-flex justify-content-center">
+            <div class="vertical-separator"></div>
+          </div>
+
+          <!-- Sağ taraf (Yazı ve Buton) -->
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="explore-text" id="explore-treng">
+              Tüm ilanlarımızı inceleyin ve kaçırmak istemeyeceğiniz fırsatlara
+              göz atın.
+            </h2>
+            <a
+              href="https://zenithrealty.sahibinden.com"
+              target="_blank"
+              class="explore-button"
+              id="exploretext"
+              >İlanlara Göz At</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- İletişim Formu ve Footer -->
+    <footer id="contactSection">
+      <div class="container">
+        <h2 class="section-title" id="contact-title" style="color: #fff">
+          İletişim
+        </h2>
+        <div class="row justify-content-between">
+          <div class="col-md-4 contact-form">
+            <h3 class="contact-subtitle" id="contact-subtitle1">Bize Ulaşın</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label" id="contact-name"
+                  >Adınız</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  style="border: 1px solid #002c55"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" id="contact-email"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  style="border: 1px solid #002c55"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label" id="contact-message"
+                  >Mesajınız</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  style="border: 1px solid #002c55"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" id="contact-submit">
+                Gönder
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <h3 id="contact-address-title">Adres Bilgisi</h3>
+            <p id="contact-address-content">
+              <br />Tepkar İş Merkezi Alaattinbey Mah.<br />
+              626 Sk. No:12 Kat:2 Kapı No:7 <br />Nilüfer, Bursa<br />Telefon:
+              (0212) 123 45 67<br />Email: zenithrealty16@gmail.com
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.9558019357564!2d28.920131489920806!3d40.210046094650046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca116be90683d1%3A0xfeaa56201a7d3cd3!2sAlaaddinbey%2C%20626.%20Sk.%20No%3A12%2C%2016120%20Ni%CC%87l%C3%BCfer%2FBursa!5e0!3m2!1str!2str!4v1730647729052!5m2!1str!2str"
+                width="600"
+                height="400"
+                style="border: 3px solid #002c55; border-radius: 3px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer">
+      <div class="container">
+        <p id="copyr">&copy; 2024 Ajans FLU. Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
